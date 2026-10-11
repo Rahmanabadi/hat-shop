@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #343a40;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  button {
+    background-color: #17a2b8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+  }
+  
+  button:hover {
+    background-color: #138496;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    background-color: #117a8b;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  thead {
+    background-color: #495057;
+    color: #ffffff;
+  }
+  
+  th, td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  th {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  td {
+    color: #495057;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .actions button {
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .actions button:last-child {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 10px;
+    }
+  
+    td {
+      padding: 15px 20px;
+      text-align: right;
+      position: relative;
+      border-bottom: none;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      color: #495057;
+    }
+  
+    .actions {
+      justify-content: space-around;
+    }
+  
+    button {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    th, td {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

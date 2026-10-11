@@ -1,0 +1,28 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+  }
+  
+  .product-details {
+    margin-top: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: red;
+  }
+  
